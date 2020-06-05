@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <title>Colin May</title>
+</head>
+<body>
+
+    <div id = "container">
+        
+        <div class="Name">
+            <h1>Hi. I'm Colin May</h1>
+            <!--<h3>and I am a <span class="typed-text"></span><span class ="cursor">&nbsp;</span></h3>-->
+        </div> 
+
+        <!--script for typed text-->
+        <script src="main.js"></script>
+
+
+        <nav>
+            <div class="header">
+                <div class="navbar" id='topNav'>
+                    <ul>
+                        <li>Home</li>
+                        <li>Projects</li>
+                        <li>Experience</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+
+            </div>
+
+                <!--script for fixed navbar-->
+                <script type="text/javascript">
+                
+                    var topNav = document.getElementById('topNav');
+                    window.onscroll = function(){
+                        if(window.pageYOffset >100){
+                            topNav.style.background = "#1A1A1D";
+                            //#007bff
+                            //topNav.style.boxShadow = "0px 4px 2px #4E4E50";
+                        }
+                        else{
+                            topNav.style.background = "transparent";
+                            topNav.style.boxShadow = "none";
+                        }
+                    }
+                </script>
+        </nav>
+
+        
+        <main>
+            
+           
+            
+        </main>
+
+        <footer>
+           
+        </footer>
+
+
+    </div> <!-- end of container-->
+    
+</body>
+</html>

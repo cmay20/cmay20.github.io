@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <title>Colin May</title>
+</head>
+<body>
+    <div class="projectsBg"></div>
+    <style>
+        .projectsBg { /*background img */
+            height: 100%;
+            background-image:url(images/code.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+    <div id = "container1">
+        
+        <div class="projectsParagraph">
+            <h1>My Work</h1>
+            <p>Working on projects is not only fun and rewarding, but it is also a huge learning experience.</p><br>
+            <p>Check Out Some Of My Projects!</p>
+            <a class="aboutButtons" href="#scrollProjects1">Projects</a>
+            
+        </div> 
+
+        <!--NAV-->
+        <nav>
+            <div class="header">
+                
+                <div class="navbar" id='topNav'>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li>Projects</li>
+                        <li><a href = "experience.html">Experience</a></li>
+                        <li><a href = "about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+           
+            <!--About Page Modals-->
+            <div id="scrollProjects1"></div>
+            <div class="projectBox">
+
+                <!--Section 1: Projects-->
+                <div id="projectInfo1">  
+                    <p class="projectsTitle">Projects</p>
+                    <p class="excited">(Click to Expand!)</p>
+
+                    <!--spotify MODAL BUTTON-->
+                    <div class="modal-open" data-model="project1Modal">
+                        <img class="leftLogo" src="images/spotifyproject.png" width="250" height="250" alt="Spotify Hackathon Project">
+                    </div>
+
+                    <!--spotify MODAL-->
+                    <div id="project1Modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">Spotify Mood Detector</div>
+                            <span class="modal-close">&times;</span>
+
+                            <!--Text in the Modal:-->
+                            <div class = "modal-body">
+                                <p>HackNA Hackathon   |   High School 2019</p><br>
+                                <p><b>Awards: </b>Second Place (out of 32)</p>
+                                <p><b>Link: </b>(coming soon)</p><br>
+                                <p><b>Idea: </b>Two of my friends and I created a program that analyzes  facebook posts to determine what mood a person is currently in.  Once a mood is determined, songs with a similar feel are immediately placed in their spotify playlist.  </p><br>
+                              <br>
+                                <p>What We Used:</p><br>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Spotify API</li>
+                                    <li>Facebook API</li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                            <!--don't need a footer-->
+
+                        </div>
+                    </div>
+
+                    <!--Flappy face MODAL-->
+                    <div class="modal-open" data-model="naModal">
+                        <img class="rightLogo" src="images/flappy.jpg" width="250" height="250" alt="Flappy Face Game">
+                    </div>
+                    <div id="naModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">Flappy Face - Flappy Bird with Facial Recognition</div>
+                            <span class="modal-close">&times;</span>
+
+                            <!--Text in the Modal:-->
+                            <div class = "modal-body">
+                                <p>AP Comp Sci Project   |   High School 2020</p><br>
+                                <p><b>Link: </b>(coming soon)</p><br>
+                                <p><b>Idea: </b>My parter and I needed to build a program for a class project.  It took us a while to decide on an idea, but we knew we wanted to work with facial recognition and the OpenCV library. We ended up building a Flappy Bird game that uses your face as the controller. At first, We wanted to track the movement of your lips and fly the bird by opening and closing the mouth; however, we did not have enough time before the deadline. Because of the delayed start, we finished the project the day before the deadline. In the end, we received an excellent score from our teacher, had a lot of fun, and learned a great deal throughout the experience.</p><br>
+                              <br>
+                                <p>What We Used:</p><br>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>OpenCV Library</li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                            <!--don't need a footer-->
+
+                        </div>
+                    </div>
+                    <script src="scripts.js"></script>
+                </div>
+ 
+            </div>
+            
+            
+
+                <!--script for fixed navbar-->
+                <script type="text/javascript">
+                
+                    var topNav = document.getElementById('topNav');
+                    window.onscroll = function(){
+                        if(window.pageYOffset >100){
+                            topNav.style.background = "#1A1A1D";
+                            //#007bff
+                            //topNav.style.boxShadow = "0px 4px 2px #4E4E50";
+                        }
+                        else{
+                            topNav.style.background = "transparent";
+                            topNav.style.boxShadow = "none";
+                        }
+                    }
+                </script>
+        </nav>
+
+        
+        <main>
+            
+           
+            
+        </main>
+
+        <footer>
+            <div class="footerTop">
+            <a href="https://www.linkedin.com/in/colin-may-2781b71ab"><img class="linkedIn" src="images/logos/linkedinlogo1.png" height="40" width="40" alt="LinkedIn"></a>
+
+            <a href="mailto:colin.may217@gmail.com"><img class="email" src="images/logos/emaillogo1.png" height="45" width="45" alt="Email"></a>
+
+            <a href="WorkingResume.pdf"><img class="resume" src="images/logos/resumelogo.png" height="38" width="40" alt="Resume"></a>
+
+            <a href="https://github.com/cmay20"><img class="github" src="images/logos/githublogo2.png" height="41" width="58" alt="Github"></a>
+        </footer>
+    </div>
+    <div class="footerBottom">
+    <p>&copy; 2020 Colin May.</p>
+     </div>
+
+
+    </div> <!-- end of container-->
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <title>Colin May</title>
+</head>
+<body>
+    <div class="indexBg"></div>
+    <div id = "container">
+        
+        
+        <div class="Name">
+            <h1>Hi. I'm Colin May</h1>
+            <h3>and I am a <span class="typed-text"></span><span class ="cursor">&nbsp;</span></h3>
+        </div> 
+
+       <!--- <div class="Arrow">
+            <img src="images/newarrow.gif" height="125" width="125" alt = "Scroll Down">
+        </div>-->
+
+        <!--script for typed text-->
+        <script src="scripts.js"></script>
+
+
+        <nav>
+            <div class="header">
+                
+
+                <div class="navbar" id='topNav'>
+                    <ul>
+                        <li>Home</li>
+                        <li><a href = "projects.html">Projects</a></li>
+                        <li><a href = "experience.html">Experience</a></li>
+                        <li><a href = "about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           <!--- <div class="aboutBox">
+
+            </div>-->
+
+                <!--script for fixed navbar-->
+                <script type="text/javascript">
+                
+                    var topNav = document.getElementById('topNav');
+                    
+                    window.onscroll = function(){
+                        if(window.pageYOffset >50){
+                            topNav.style.backgroundColor = 'rgba(26, 26, 29, 0.90)';
+                            
+                            //topNav.style.background = "#1A1A1D";
+                            //topNav.style.boxShadow = "0px 4px 2px #4E4E50";
+                        }
+                        else{
+                            topNav.style.background = "transparent";
+                            topNav.style.boxShadow = "none";
+                        }
+                    }
+                </script>
+
+        </nav>
+
+        
+        <main>
+            
+           
+            
+        </main>
+
+        <footer>
+            <div class="footerTop">
+                <a href="https://www.linkedin.com/in/colin-may-2781b71ab"><img class="linkedIn" src="images/logos/linkedinlogo1.png" height="40" width="40" alt="LinkedIn"></a>
+    
+                <a href="mailto:colin.may217@gmail.com"><img class="email" src="images/logos/emaillogo1.png" height="45" width="45" alt="Email"></a>
+    
+                <a href="WorkingResume.pdf"><img class="resume" src="images/logos/resumelogo.png" height="38" width="40" alt="Resume"></a>
+    
+                <a href="https://github.com/cmay20"><img class="github" src="images/logos/githublogo2.png" height="41" width="58" alt="Github"></a>
+        </footer>
+            </div>
+            <div class="footerBottom">
+            <p>&copy; 2020 Colin May.</p>
+            </div>
+
+    </div> <!-- end of container-->
+    
+</body>
+</html>

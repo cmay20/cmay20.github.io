@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <title>Colin May</title>
+</head>
+<body>
+    <div class="experienceBg"></div>
+    <style>
+        .experienceBg { /*background img */
+            height: 100%;
+            background-image:url(images/experiencePg.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+    <div id = "container1">
+        
+        <div class="projectsParagraph">
+            <h1>Work Experience</h1>
+            <p>Not only is teamwork invaluable to job productivity, but it also binds together and motivates those around you. </p><br>
+            <p>Check Out Who I Have Worked With!</p>
+            <a class="aboutButtons" href="#scrollExperience1">Experience</a>
+            
+        </div> 
+
+        <!--NAV-->
+        <nav>
+            <div class="header">
+                
+                <div class="navbar" id='topNav'>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "projects.html">Projects</a></li>
+                        <li>Experience</li>
+                        <li><a href = "about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+           
+            <!--About Page Modals-->
+            <div id="scrollExperience1"></div>
+            <div class="projectBox">
+
+                <!--Section 1: Projects-->
+                <div id="projectInfo1">  
+                    <p class="projectsTitle">Work</p>
+                    <p class="excited">(Click to Expand!)</p>
+
+                    <!--spotify MODAL BUTTON-->
+                    <div class="modal-open" data-model="project1Modal">
+                        <img class="centerLogo" src="images/codeninjas.png" width="350" height="240" alt="Spotify Hackathon Project">
+                    </div>
+
+                    <!--spotify MODAL-->
+                    <div id="project1Modal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">Code Ninjas</div>
+                            <span class="modal-close">&times;</span>
+
+                            <!--Text in the Modal:-->
+                            <div class = "modal-body">
+                                <p>Wexford, PA | Spring 2019 - Summer 2020</p><br>
+                                <p><b>Position: </b>"Code Sensei" - Programming Teacher</p>
+                                <p><b>Link: </b><a href="https://www.codeninjas.com/pa-wexford" alt="(linktosite)">Code Ninjas Website</a></p><br>
+                                <p><b>My Role: </b> Code Ninjas believes in a self-paced, but not self-taught learning structure. As Sensei, I helped young kids (ages 5-14), who came for drop-in hours, learn the essential foundations of computer programming.  When school was out, we hosted summer camps.  I loved to teach large groups of young ninjas a variety of topics ranging from beginner (Scratch) to advanced (Javascript/Lua/C#). It was extremely rewarding seeing the excitement on everyone's face after completing their first game.</p><br>
+                              <br>
+                                <p>What We Taught:</p><br>
+                                <ul>
+                                    <li>Scratch</li>
+                                    <li>Javascript</li>
+                                    <li>Roblox Studio (Lua)</li>
+                                    <li>Unity (C#)</li>
+                                    <li>App Development</li>
+                                    <li>Game Development</li>
+                                    <li>Robotics</li>
+
+                                </ul>
+                            </div>
+                            <!--don't need a footer-->
+
+                        </div>
+                    </div>
+                    <script src="scripts.js"></script>
+                </div>
+ 
+            </div>
+            
+            
+
+                <!--script for fixed navbar-->
+                <script type="text/javascript">
+                
+                    var topNav = document.getElementById('topNav');
+                    window.onscroll = function(){
+                        if(window.pageYOffset >100){
+                            topNav.style.background = "#1A1A1D";
+                            //#007bff
+                            //topNav.style.boxShadow = "0px 4px 2px #4E4E50";
+                        }
+                        else{
+                            topNav.style.background = "transparent";
+                            topNav.style.boxShadow = "none";
+                        }
+                    }
+                </script>
+        </nav>
+
+        
+        <main>
+            
+           
+            
+        </main>
+
+        <footer>
+            <div class="footerTop">
+            <a href="https://www.linkedin.com/in/colin-may-2781b71ab"><img class="linkedIn" src="images/logos/linkedinlogo1.png" height="40" width="40" alt="LinkedIn"></a>
+
+            <a href="mailto:colin.may217@gmail.com"><img class="email" src="images/logos/emaillogo1.png" height="45" width="45" alt="Email"></a>
+
+            <a href="WorkingResume.pdf"><img class="resume" src="images/logos/resumelogo.png" height="38" width="40" alt="Resume"></a>
+
+            <a href="https://github.com/cmay20"><img class="github" src="images/logos/githublogo2.png" height="41" width="58" alt="Github"></a>
+        </footer>
+    </div>
+    <div class="footerBottom">
+    <p>&copy; 2020 Colin May.</p>
+     </div>
+
+
+    </div> <!-- end of container-->
+    
+</body>
+</html>

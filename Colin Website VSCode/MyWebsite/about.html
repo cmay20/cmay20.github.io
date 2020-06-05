@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles.css">
+    <title>Colin May</title>
+</head>
+<body>
+    <div class="aboutBg"></div>
+    <style>
+        .aboutBg { /*background img */
+            height: 100%;
+            background-image:url(images/newabout.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+
+    <div id = "container1">
+        
+        <div class="aboutParagraph">
+            <h1>About Me</h1>
+            <img class="profilePic" src="images/websitePfp.jpg" height="200" width="170" alt="profilePicture">
+            <p>Hi! I'm Colin, and I am a 'Student', 'Programmer', and 'Teacher':<br><br>This year, I graduated from North Allegheny Senior High School.  In August of 2020, I will begin my studies at Carnegie Mellon University.  My prospective major is Statistics and Machine Learning, and I am planning on minoring in Computer Science.<br><br>Ever since my first programming class in HS, I have loved to code.  My friends and I have built a few interesting projects and I am excited to add to the collection in the future. <br><br>Last summer, I began my first job at CodeNinjas where I taught young kids about programming and game design. The people I met and experience I gained at CodeNinjas have helped make me the person I am today.<br><br>To add to this experience in the future, I look forward to working on anything that makes a difference in the world.<br><br>Feel free to contact me via email or LinkedIn, look at my resume, or even check out my Github! Click below to learn about my education and technical skills.<br><br></p>
+            <a class="aboutButtons" href="#scrollAbout1">Education</a>
+            <a class="aboutButtons" href="#scrollAbout2">Skills</a>
+        </div> 
+
+        <!--NAV-->
+        <nav>
+            <div class="header">
+            
+                <div class="navbar" id='topNav'>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "projects.html">Projects</a></li>
+                        <li><a href = "experience.html">Experience</a></li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+
+
+           
+            <!--About Page Modals-->
+            
+            <div class="aboutBox">
+
+
+
+                <div id="scrollAbout1"></div>
+                <!--Section 1: Education-->
+                <div id="about1">  
+                    <p class="aboutTitle">Education</p>
+                    <p class="excited">(Click to Expand!)</p>
+
+                    <!--CMU MODAL BUTTON-->
+                    <div class="modal-open" data-model="cmuModal">
+                        <img class="leftLogo" src="images/logos/cmulogo.jpg" width="250" height="250" alt="Carnegie Mellon University">
+                    </div>
+
+                    <!--CMU MODAL-->
+                    <div id="cmuModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">Carnegie Mellon University</div>
+                            <span class="modal-close">&times;</span>
+
+                            <!--Text in the Modal:-->
+                            <div class = "modal-body">
+                                <p>Pittsburgh, PA   |   August 2020 - May 2024</p><br>
+                                <p><b>Major: </b>Statistics & Machine Learning</p>
+                                <p><b>Minor: </b>Computer Science</p><br>
+                                <p><b>GPA: </b>N/A</p>
+                                <p><b>Honors: </b>N/A</p><br><br>
+                                <p>Relevant Coursework:</p><br>
+                                <ul>
+                                    <li>15-112: example class name</li>
+                                    <li>class2</li>
+                                    <li>class3</li>
+                                    <li>class4</li>
+                                    <li>class5</li>
+                                </ul>
+                            </div>
+                            <!--don't need a footer-->
+
+                        </div>
+                    </div>
+
+                    <!--NA MODAL-->
+                    <div class="modal-open" data-model="naModal">
+                        <img class="rightLogo" src="images/logos/nalogo.jpeg" width="250" height="250" alt="North Allegheny High School">
+                    </div>
+                    <div id="naModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">North Allegheny High School</div>
+                            <span class="modal-close">&times;</span>
+
+                            <!--Text in the Modal:-->
+                            <div class = "modal-body">
+                                <p>Pittsburgh, PA   |   August 2016 - June 2020</p><br>
+                                
+                                <p><b>GPA: </b>4.0</p>
+                                <br>
+                                <p>Relevant Coursework:</p><br>
+                                <ul>
+                                    <li>AP Computer Science (Java)</li>
+                                    <li>Computer Science A (C++)</li>
+                                    <li>Computer Science B (C++)</li>
+                                    <li>Webpage Design (HTML/CSS)</li>
+                                    <li>CyberSecurity and the Law</li>
+                                    <li>Game Development</li>
+                                    <li>Advanced Game Development (Unity, C#)</li>
+                                </ul>
+                            </div>
+                            <!--don't need a footer-->
+
+                        </div>
+                    </div>
+                    <script src="scripts.js"></script>
+                </div>
+
+
+
+                <!--Section 2: Skills-->
+                <div id="scrollAbout2"></div>
+                <div id="about2">
+                    <p class="aboutTitle">Skills</p>
+                    <p class="excited">(Excited to Learn More!)</p>
+
+                    <!-- Skills Color Bar-->
+                    <div class="skillsColorBar">
+                        <p>Java</p>
+                        <div class="skillContainer">
+                            <div class="skills java">80%</div>
+                        </div>
+
+                        <p>C++</p>
+                        <div class="skillContainer">
+                            <div class="skills cplusplus">70%</div>
+                        </div>
+
+                        <p>HTML/CSS</p>
+                        <div class="skillContainer">
+                            <div class="skills htmlcss">60%</div>
+                        </div>
+
+                        <p>Python</p>
+                        <div class="skillContainer">
+                            <div class="skills python">40%</div>
+                        </div>
+
+                        <p>Javascript</p>
+                        <div class="skillContainer">
+                            <div class="skills javascript">20%</div>
+                        </div>
+
+                        <p>AI/Machine Learning</p>
+                        <div class="skillContainer">
+                            <div class="skills aiMachineLearning">10%</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            
+            </div>
+            
+            
+
+                <!--script for fixed navbar-->
+                <script type="text/javascript">
+                
+                    var topNav = document.getElementById('topNav');
+                    window.onscroll = function(){
+                        if(window.pageYOffset >100){
+                            topNav.style.background = "#1A1A1D";
+                            //#007bff
+                            //topNav.style.boxShadow = "0px 4px 2px #4E4E50";
+                        }
+                        else{
+                            topNav.style.background = "transparent";
+                            topNav.style.boxShadow = "none";
+                        }
+                    }
+                </script>
+        </nav>
+
+        
+        <main>
+            
+           
+            
+        </main>
+
+        <footer>
+            <div class="footerTop">
+            <a href="https://www.linkedin.com/in/colin-may-2781b71ab"><img class="linkedIn" src="images/logos/linkedinlogo1.png" height="40" width="40" alt="LinkedIn"></a>
+
+            <a href="mailto:colin.may217@gmail.com"><img class="email" src="images/logos/emaillogo1.png" height="45" width="45" alt="Email"></a>
+
+            <a href="WorkingResume.pdf"><img class="resume" src="images/logos/resumelogo.png" height="38" width="40" alt="Resume"></a>
+
+            <a href="https://github.com/cmay20"><img class="github" src="images/logos/githublogo2.png" height="41" width="58" alt="Github"></a>
+        </footer>
+    </div>
+    <div class="footerBottom">
+    <p>&copy; 2020 Colin May.</p>
+     </div>
+
+
+    </div> <!-- end of container-->
+    
+</body>
+</html>

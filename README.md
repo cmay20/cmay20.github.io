@@ -1,4 +1,4 @@
-# High School Webpage Design Final Project
+# Webpage Design - Final Project
 
 To view this project, visit [https://cmay20.github.io/]()
 
